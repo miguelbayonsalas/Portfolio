@@ -3387,17 +3387,17 @@ input, select, textarea {
     -ms-align-items: center;
     align-items: center;
     /* Elimina la imagen de fondo */
-    /* background-image: url("../../images/banner.jpg"); */
+    background-image: url("../../images/banner.jpg"); /**/
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
     padding: 6em 0 2em 0;
     /* Elimina propiedades de background-image */
-    /* background-attachment: fixed;
+     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover; /**/
     border-bottom: 0 !important;
     cursor: default;
     height: 60vh;
