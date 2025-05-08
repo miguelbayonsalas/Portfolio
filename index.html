@@ -137,6 +137,36 @@ industria, siempre dispuesto y con un buen ambiente de trabajo.
 									<ul class="actions">
 										<li><a href="Documentos/CV_Castellano.pdf" class="button next">Currículum</a></li>
 									</ul>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
+
+<script>
+google.charts.load('current',{packages:['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+
+// Set Data
+const data = google.visualization.arrayToDataTable([
+  ['Price', 'Size'],
+  [50,7],[60,8],[70,8],[80,9],[90,9],
+  [100,9],[110,10],[120,11],
+  [130,25],[140,14],[150,15]
+]);
+
+// Set Options
+const options = {
+  title: 'Climograma de hoy',
+  hAxis: {title: 'Horas'},
+  vAxis: {title: 'Temperatura'},
+  legend: 'none'
+};
+
+// Draw
+const chart = new google.visualization.LineChart(document.getElementById('myChart'));
+chart.draw(data, options);
+
+}
+</script>
 								</div>
 							</section>
 
